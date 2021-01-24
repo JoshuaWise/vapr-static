@@ -1,0 +1,37 @@
+{
+  "name": "vapr-static",
+  "version": "0.1.0",
+  "description": "A Vapr plugin that provides a basic static file server",
+  "main": "lib/index.js",
+  "dependencies": {
+    "vapr-conditionals": "^0.2.1"
+  },
+  "peerDependencies": {
+    "vapr": "^0.5.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
+  },
+  "scripts": {
+    "test": "$(npm bin)/mocha --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoshuaWise/vapr-static.git"
+  },
+  "keywords": [
+    "vapr",
+    "plugin",
+    "middleware",
+    "static",
+    "file",
+    "server"
+  ],
+  "author": "Joshua Wise <joshuathomaswise@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JoshuaWise/vapr-static/issues"
+  },
+  "homepage": "https://github.com/JoshuaWise/vapr-static#readme"
+}
