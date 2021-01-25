@@ -9,7 +9,7 @@ npm install --save vapr-static
 
 ## Usage
 
-This is a convenience plugin that provides a basic static file server.
+This is a plugin that provides a basic static file server.
 
 ```js
 const staticFileServer = require('vapr-static');
