@@ -33,7 +33,7 @@ route.use((req) => (res) => {
 });
 ```
 
-Under the hood, this plugin uses [`vapr-conditionals`](https://github.com/JoshuaWise/vapr-conditionals) to provide ETags, so you shouldn't use that plugin in combination with this one, and you shouldn't provide your own ETag implementation. However, you may want to utilize [`vapr-caching`](https://github.com/JoshuaWise/vapr-caching) and/or [`vapr-compress`](https://github.com/JoshuaWise/vapr-compress) to improve the performance of serving static files.
+Under the hood, this plugin uses [`vapr-conditionals`](https://github.com/JoshuaWise/vapr-conditionals) to provide ETags, so you shouldn't use that plugin in combination with this one, and you shouldn't provide your own ETag implementation either. However, you may want to utilize [`vapr-caching`](https://github.com/JoshuaWise/vapr-caching) and/or [`vapr-compress`](https://github.com/JoshuaWise/vapr-compress) to improve the performance of serving static files.
 
 ## Options
 
