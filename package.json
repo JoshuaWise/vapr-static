@@ -1,6 +1,6 @@
 {
   "name": "vapr-static",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A Vapr plugin that provides a basic static file server",
   "main": "lib/index.js",
   "dependencies": {
