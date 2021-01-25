@@ -53,11 +53,11 @@ This option allows you to provide a "broker" function, which allows you to perfo
 
 The broker function takes two arguments. The first argument is a decoded (not containing percent-encodings) version of [`req.target.pathname`](https://github.com/JoshuaWise/vapr/blob/master/docs/reference/request.md#target---object). The second argument is the `req` object itself.
 
-The broker function must return a filesystem path to replace the path given as the first argument. Alternatively, the broker can throw any valid [vapr response](https://github.com/JoshuaWise/vapr/blob/master/docs/reference/response.md#class-response).
+The broker function must return a filesystem path intended to replace the path given as the first argument. Alternatively, the broker can throw any valid [vapr response](https://github.com/JoshuaWise/vapr/blob/master/docs/reference/response.md#class-response).
 
 Below are some examples of things you can do with a broker.
 
-#### Serving index.html when "/" is requested
+#### Serve index.html when "/" is requested
 
 ```js
 route.use(staticFileServer({
@@ -69,7 +69,7 @@ route.use(staticFileServer({
 }));
 ```
 
-#### Adding ".html" extension when a file extension is missing
+#### Add ".html" extension when a file extension is missing
 
 ```js
 const { extname } = require('path');
@@ -83,7 +83,7 @@ route.use(staticFileServer({
 }));
 ```
 
-#### Redirecting requests with trailing slashes
+#### Redirect requests with trailing slashes
 
 ```js
 route.use(staticFileServer({
@@ -97,7 +97,7 @@ route.use(staticFileServer({
 }));
 ```
 
-#### Requiring all requests to be prefixed with "/static/"
+#### Require all requests to be prefixed with "/static/"
 
 ```js
 route.use(staticFileServer({
