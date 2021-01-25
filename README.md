@@ -39,7 +39,7 @@ Under the hood, this plugin uses [`vapr-conditionals`](https://github.com/Joshua
 
 ### options.root
 
-This is the only required option. It specifies the filesystem path of the directory from which to serve static files.
+This is the only required option. It's the (string) filesystem path of the directory from which to serve static files.
 
 ### options.dotfiles = *false*
 
