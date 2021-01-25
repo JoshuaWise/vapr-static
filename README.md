@@ -19,6 +19,8 @@ const route = app.notFound();
 route.use(staticFileServer({ root: '/path/to/static/folder' }));
 ```
 
+It's as simple as that!
+
 This plugin also exports a function called `getFilename()` which returns the fully resolved filename associated with a request, typically for logging purposes. If a valid filename could not be determined (e.g., because the request was invalid), it returns `null`.
 
 ```js
