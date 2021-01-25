@@ -43,7 +43,7 @@ This is the only required option. It's the (string) filesystem path of the direc
 
 ### options.dotfiles = *false*
 
-By default, this plugin will not serve files that have a path segment beginning with a dot (`"."`), for security purposes. You can disable that behavior by setting this option to `true`.
+By default, for security purposes, this plugin will not serve files that have a path segment beginning with a dot (`"."`). You can disable that behavior by setting this option to `true`.
 
 ### options.noEtags = *false*
 
